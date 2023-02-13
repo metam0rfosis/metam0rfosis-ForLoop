@@ -40,9 +40,11 @@ public class Lab {
      *      @return the sum of all numbers between start and end, with start inclusive and end exclusive.
      */
     public String returnNumbers(int start, int end){
-        String buildingString = "";
+        String buildingString = start + "";
 
-//        code here
+        for (int i = start + 1; i < end; i++) {
+            buildingString += " " + i;
+        }
 
         return buildingString;
     }
